@@ -1,0 +1,12 @@
+{
+  "name": "panska-sadyba",
+  "version": "1.0.0",
+  "description": "Панська Садиба",
+  "main": "index.html",
+  "scripts": {
+    "start": "index.html"
+  },
+  "author": "Oleg Rasin",
+  "license": "ISC",
+  "dependencies": {}
+}
