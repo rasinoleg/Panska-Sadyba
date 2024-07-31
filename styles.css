@@ -10,26 +10,32 @@ body {
 h1 {
   font-family: Snell Roundhand, cursive;
   font-size: 80px;
+  color: #000;
 }
 
 h2 {
   font-family: Snell Roundhand, cursive;
   font-size: 50px;
+  color: #000;
 }
 
 .p2 {
   font-family: Snell Roundhand, cursive;
   font-size: 30px;
+  color: #000;
 }
+
 header {
-  background-color: rgba(255, 255, 255, 0.8);
+  background: url("/images/petrus_main.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
   padding: 20px;
   text-align: center;
   font-size: 30px;
+  position: relative;
 }
 
 nav {
-  /* background-color: red; */
   color: #fff;
   padding: 10px;
   text-align: center;
@@ -39,6 +45,8 @@ nav a {
   color: black;
   margin: 0 15px;
   text-decoration: none;
+  font-size: 30px;
+  font-family: Snell Roundhand, cursive;
 }
 
 nav a.active {
@@ -46,10 +54,24 @@ nav a.active {
   border-bottom: 2px solid #fff;
 }
 
-.hero {
-  background: rgba(240, 240, 240, 0.8);
-  padding: 50px 20px;
+.hero,
+.about,
+.history,
+.team {
+  color: #fff;
   text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero {
+  background: url("path/to/your/hero-image.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.about,
+.history,
+.team {
+  color: #000;
 }
 
 .menu {
@@ -62,36 +84,28 @@ nav a.active {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 20px;
 }
 
 .menu-list li {
-  padding: 10px 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .menu-list h3 {
   margin: 0;
   font-size: 1.2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .menu-list p {
   margin: 5px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.gallery {
-  padding: 20px;
 }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /* gap: 50px; */
 }
 
 .gallery-item {
@@ -112,6 +126,18 @@ nav a.active {
   border-radius: 5px;
 }
 
+.like-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+}
+
 .description-popup {
   display: none;
   position: fixed;
@@ -126,23 +152,31 @@ nav a.active {
   z-index: 1000;
 }
 
+.modal-content {
+  background: #333;
+  border-radius: 5px;
+  padding: 20px;
+  display: inline-block;
+  position: relative;
+}
+
 .description-popup p {
   margin: 0 0 10px;
 }
 
-.description-popup button {
-  background: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
   cursor: pointer;
 }
 
 footer {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #000;
+  color: #fff;
   text-align: center;
   padding: 10px;
-  position: fixed;
   bottom: 0;
   width: 100%;
 }
@@ -150,10 +184,37 @@ footer {
 .instagram-link {
   font-family: Snell Roundhand, cursive;
   font-size: 40px;
+  color: red;
 }
-/* Медиазапросы для адаптивности */
 
-/* Для экранов мобильных телефонов (до 480px) */
+.contact {
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact h3 {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
+.map-container {
+  margin: 20px auto;
+  max-width: 600px; /* Ограничивает максимальную ширину карты */
+  height: 400px; /* Высота карты */
+  position: relative;
+  width: 100%;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 @media (max-width: 480px) {
   header {
     font-size: 24px;
@@ -167,7 +228,10 @@ footer {
     margin: 0 10px;
   }
 
-  .hero {
+  .hero,
+  .about,
+  .history,
+  .team {
     padding: 30px 10px;
   }
 
@@ -188,7 +252,6 @@ footer {
   }
 }
 
-/* Для экранов планшетов (от 481px до 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
   header {
     font-size: 28px;
@@ -202,7 +265,10 @@ footer {
     margin: 0 12px;
   }
 
-  .hero {
+  .hero,
+  .about,
+  .history,
+  .team {
     padding: 40px 15px;
   }
 
@@ -223,7 +289,6 @@ footer {
   }
 }
 
-/* Для экранов десктопов (от 769px и выше) */
 @media (min-width: 769px) {
   header {
     font-size: 30px;
@@ -237,7 +302,10 @@ footer {
     margin: 0 15px;
   }
 
-  .hero {
+  .hero,
+  .about,
+  .history,
+  .team {
     padding: 50px 20px;
   }
 
