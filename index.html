@@ -1,43 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Панська Садиба</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1 class="h1">Панська Садиба</h1>
-    </header>
-
-    <nav>
-      <a href="index.html" class="nav-link" id="home-link">Головна</a>
-      <a href="menu.html" class="nav-link" id="menu-link">Меню</a>
-      <a href="contact.html" class="nav-link" id="contact-link">Контакти</a>
-    </nav>
-
-    <section id="home" class="hero">
-      <div>
-        <h2 class="h2">Ласкаво просимо в ресторан Панська Садиба</h2>
-        <p class="p2">
-          Насолоджуйтесь найкращими блюдами та затишною атмосферою
-        </p>
-      </div>
-    </section>
-
-    <footer>
-      <p>&copy; 2024 Ресторан Панська Садиба. Всі права захищені.</p>
-      <a
-        href="https://www.instagram.com/panska_saduba2024"
-        target="_blank"
-        class="instagram-link"
-        >Instagram</a
-      >
-    </footer>
-  </body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="uk">
   <head>
@@ -45,72 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Панська Садиба</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      const translations = {
+        en: {
+          title: "Panska Sadyba",
+          home: "Home",
+          menu: "Menu",
+          contact: "Contact",
+          feedback: "Leave Feedback",
+          welcome: "Welcome to the Panska Sadyba restaurant",
+          description:
+            "One of the most interesting and richest cuisines in the world is rightfully considered to be Ukrainian cuisine...",
+          about: "About Us",
+          aboutText:
+            "The Panska Sadyba restaurant is a unique place where traditions meet modernity...",
+          history: "Our History",
+          historyText:
+            "Opened in 2024, the Panska Sadyba restaurant quickly won the love of locals and visitors...",
+          team: "Our Team",
+          teamText:
+            "Our team consists of professional chefs, waiters, and administration...",
+          footer: "&copy; 2024 Panska Sadyba Restaurant. All rights reserved.",
+          instagram: "Instagram",
+        },
+        uk: {
+          title: "Панська Садиба",
+          home: "Головна",
+          menu: "Меню",
+          contact: "Контакти",
+          feedback: "Залишити відгук",
+          welcome:
+            "Ласкаво просимо в ресторан української кухні Панська Садиба",
+          description:
+            "Однією з найцікавіших та найбагатших у світі по праву вважається саме українська кухня...",
+          about: "Про нас",
+          aboutText:
+            "Ресторан Панська Садиба — це унікальне місце, де традиції зустрічаються з сучасністю...",
+          history: "Наша історія",
+          historyText:
+            "Відкритий у 2024 році, ресторан Панська Садиба швидко завоював любов місцевих жителів...",
+          team: "Наша команда",
+          teamText:
+            "Наша команда складається з професійних кухарів, офіціантів та адміністрації...",
+          footer: "&copy; 2024 Ресторан Панська Садиба. Всі права захищені.",
+          instagram: "Instagram",
+        },
+      };
+
+      function setLanguage(lang) {
+        $("[data-i18n]").each(function () {
+          const key = $(this).data("i18n");
+          $(this).text(translations[lang][key]);
+        });
+      }
+
+      $(document).ready(function () {
+        $(".lang-button").click(function () {
+          const lang = $(this).data("lang");
+          setLanguage(lang);
+        });
+        setLanguage("uk");
+      });
+    </script>
   </head>
   <body>
     <header>
-      <h1 class="h1">Панська Садиба</h1>
+      <h1 data-i18n="title">Панська Садиба</h1>
     </header>
 
     <nav>
-      <a href="index.html" class="nav-link" id="home-link">Головна</a>
-      <a href="menu.html" class="nav-link" id="menu-link">Меню</a>
-      <a href="contact.html" class="nav-link" id="contact-link">Контакти</a>
+      <a href="index.html" class="nav-link" data-i18n="home">Головна</a>
+      <a href="menu.html" class="nav-link" data-i18n="menu">Меню</a>
+      <a href="contact.html" class="nav-link" data-i18n="contact">Контакти</a>
+      <a href="feedback.html" class="nav-link" data-i18n="feedback"
+        >Залишити відгук</a
+      >
+      <button class="lang-button lang-button-EN" data-lang="en">EN</button>
+      <button class="lang-button lang-button-UK" data-lang="uk">UK</button>
     </nav>
+    <main>
+      <section id="home" class="hero">
+        <div>
+          <h2 data-i18n="welcome" class="h2">
+            Ласкаво просимо в ресторан української кухні Панська Садиба
+          </h2>
+          <p data-i18n="description" class="p2">
+            Однією з найцікавіших та найбагатших у світі по праву вважається
+            саме українська кухня. Завдяки різноманітності страв, їхнім
+            неповторним смаковим якостям українська кухня у ресторанах здобула
+            величезну любов і популярність не лише в Україні, а й далеко за її
+            межами. Всі знають про українські пампушки, гречаники, галушки. А
+            хіба є ті, хто не захоче поласувати у ресторані у Києві такими
+            традиційними стравами, як шпиговане сало, наваристий борщ або
+            вареники з різними начинками? Сформувалася українська кухня в ХІХ
+            столітті, будучи близькою до білоруської та польської. Цікаво, що за
+            часів Київської Русі слов’яни перейняли деякі страви візантійської
+            кухні – наприклад, борщ, що був національною стравою Стародавнього
+            Риму! А технологію приготування деяких страв українці запозичили в
+            угорців, татарів, турків і навіть німців, трохи змінивши її.
+            Можливо, саме тому українці давно звикли до страв інших народів
+            світу, вважаючи їх «своїми» і насолоджуючись різними смаками і
+            незвичайним поєднанням інгредієнтів. У ресторані Prynada подають
+            саме такі страви – національні, але адаптовані під запити сучасного
+            українця та ритм його життя. Тут немає певних рамок і умовностей:
+            кожен гість може дізнатися багато нового як про рідну кухню, так і
+            про кухню будь-якої іншої країни. Навіть найвибагливіший гурман
+            серед величезного розмаїття запропонованих страв легко вибере ті, що
+            викличуть у нього справжнє захоплення.
+          </p>
+        </div>
+      </section>
 
-    <section id="home" class="hero">
-      <div>
-        <h2 class="h2">Ласкаво просимо в ресторан Панська Садиба</h2>
-        <p class="p2">
-          Насолоджуйтесь найкращими блюдами та затишною атмосферою
-        </p>
-      </div>
-    </section>
+      <section id="about" class="about">
+        <div>
+          <h2 data-i18n="about" class="h2">Про нас</h2>
+          <p data-i18n="aboutText" class="p2">
+            Ресторан Панська Садиба — це унікальне місце, де традиції
+            зустрічаються з сучасністю. Ми пропонуємо широкий вибір страв
+            української кухні, приготованих з найсвіжіших інгредієнтів. Наші
+            кухарі готують для вас з любов'ю та увагою до деталей.
+          </p>
+        </div>
+      </section>
 
-    <!-- Новая секция: О нас -->
-    <section id="about" class="about">
-      <div>
-        <h2 class="h2">Про нас</h2>
-        <p class="p2">
-          Ресторан Панська Садиба — це унікальне місце, де традиції
-          зустрічаються з сучасністю. Ми пропонуємо широкий вибір страв
-          української кухні, приготованих з найсвіжіших інгредієнтів. Наші
-          кухарі готують для вас з любов'ю та увагою до деталей.
-        </p>
-      </div>
-    </section>
+      <section id="history" class="history">
+        <div>
+          <h2 data-i18n="history" class="h2">Наша історія</h2>
+          <p data-i18n="historyText" class="p2">
+            Відкритий у 2024 році, ресторан Панська Садиба швидко завоював любов
+            місцевих жителів та гостей міста. Наш ресторан — це місце, де можна
+            насолодитися не тільки смачною їжею, але й теплою атмосферою, яка
+            нагадує про сімейні вечори.
+          </p>
+        </div>
+      </section>
 
-    <!-- Новая секция: Наша історія -->
-    <section id="history" class="history">
-      <div>
-        <h2 class="h2">Наша історія</h2>
-        <p class="p2">
-          Відкритий у 2024 році, ресторан Панська Садиба швидко завоював любов
-          місцевих жителів та гостей міста. Наш ресторан — це місце, де можна
-          насолодитися не тільки смачною їжею, але й теплою атмосферою, яка
-          нагадує про сімейні вечори.
-        </p>
-      </div>
-    </section>
-
-    <!-- Новая секция: Команда -->
-    <section id="team" class="team">
-      <div>
-        <h2 class="h2">Наша команда</h2>
-        <p class="p2">
-          Наша команда складається з професійних кухарів, офіціантів та
-          адміністрації, які працюють разом, щоб забезпечити вам найкращий
-          досвід. Ми завжди готові зробити все можливе, щоб ваш візит до нас був
-          незабутнім.
-        </p>
-      </div>
-    </section>
+      <section id="team" class="team">
+        <div>
+          <h2 data-i18n="team" class="h2">Наша команда</h2>
+          <p data-i18n="teamText" class="p2">
+            Наша команда складається з професійних кухарів, офіціантів та
+            адміністрації, які працюють разом, щоб забезпечити вам найкращий
+            досвід. Ми завжди готові зробити все можливе, щоб ваш візит до нас
+            був незабутнім.
+          </p>
+        </div>
+      </section>
+    </main>
 
     <footer>
-      <p>&copy; 2024 Ресторан Панська Садиба. Всі права захищені.</p>
+      <p data-i18n="footer">
+        &copy; 2024 Ресторан Панська Садиба. Всі права захищені.
+      </p>
       <a
         href="https://www.instagram.com/panska_saduba2024"
         target="_blank"
         class="instagram-link"
+        data-i18n="instagram"
         >Instagram</a
       >
     </footer>

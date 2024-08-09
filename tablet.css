@@ -1,0 +1,67 @@
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-size: 768x auto;
+    background: url("images/1613795665_33-p-fon-dlya-prezentatsii-v-ukrainskom-stile-33.png")
+      no-repeat center center fixed;
+    background-size: 100% auto;
+  }
+  header {
+    font-size: 28px;
+  }
+
+  nav {
+    padding: 8px;
+  }
+
+  nav a {
+    margin: 0 12px;
+  }
+
+  .hero,
+  .about,
+  .history,
+  .team {
+    padding: 40px 15px;
+  }
+
+  .menu {
+    padding: 15px;
+  }
+
+  .menu-list h3 {
+    font-size: 1.15em;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  }
+
+  footer {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 45px;
+    padding-left: 60px;
+    width: 100%;
+  }
+
+  .p2 {
+    font-size: 25px;
+    width: 100%;
+    padding-left: 60px;
+  }
+
+  .menu-list {
+    padding-left: 60px;
+    gap: 15px;
+  }
+
+  .feedback-section {
+    padding: 1.5rem;
+  }
+}

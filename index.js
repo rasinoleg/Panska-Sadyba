@@ -44,10 +44,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const likeButtons = document.querySelectorAll(".like-button");
 
   likeButtons.forEach((button) => {
+    let likeCount = 0;
+    const countSpan = button.querySelector(".like-count");
+
     button.addEventListener("click", (event) => {
-      event.stopPropagation(); // предотвращаем открытие модального окна
-      button.style.backgroundColor =
-        button.style.backgroundColor === "red" ? "rgba(255, 0, 0, 0.8)" : "red";
+      event.stopPropagation();
+      likeCount += 1;
+      countSpan.textContent = likeCount;
     });
   });
 });

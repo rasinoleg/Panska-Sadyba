@@ -2,37 +2,44 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: url("images/1653287539_3-celes-club-p-ukrainskii-fon-dlya-prezentatsii-krasivie-3.jpg")
+  line-height: 1.6;
+  background: url("images/1613795665_33-p-fon-dlya-prezentatsii-v-ukrainskom-stile-33.png")
     no-repeat center center fixed;
   background-size: cover;
 }
 
-h1 {
+h1,
+h2,
+.p2 {
   font-family: Snell Roundhand, cursive;
-  font-size: 80px;
   color: #000;
+}
+
+h1 {
+  font-size: 80px;
 }
 
 h2 {
-  font-family: Snell Roundhand, cursive;
   font-size: 50px;
-  color: #000;
+  max-width: 100%;
 }
 
 .p2 {
-  font-family: Snell Roundhand, cursive;
   font-size: 30px;
-  color: #000;
+  max-width: 100%;
 }
 
 header {
-  background: url("/images/petrus_main.jpg") no-repeat center center;
+  background: url("/images/1659832835_46-funart-pro-p-fon-dlya-prezentatsii-v-belorusskom-stile-48.jpg")
+    no-repeat center center;
   background-size: cover;
   color: #fff;
   padding: 20px;
   text-align: center;
   font-size: 30px;
-  position: relative;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 nav {
@@ -54,6 +61,50 @@ nav a.active {
   border-bottom: 2px solid #fff;
 }
 
+.lang-button-UK,
+.lang-button-EN {
+  border: 2px solid #fff;
+  border-radius: 30px;
+  color: red;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.lang-button-UK {
+  background: linear-gradient(to right, #0057b7 50%, #ffd700 50%);
+}
+
+.lang-button-EN {
+  background: linear-gradient(
+    to right,
+    #3c3b6e 33.33%,
+    #fff 33.33%,
+    #fff 66.66%,
+    #b22234 66.66%
+  );
+}
+
+.lang-button-EN:before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 30%;
+  height: 80%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,15 61,35 82,35 65,50 70,70 50,58 30,70 35,50 18,35 39,35" fill="white"/></svg>')
+    repeat;
+  background-size: 10% 10%;
+}
+
+.lang-button:active {
+  background-color: #777;
+}
+
 .hero,
 .about,
 .history,
@@ -66,6 +117,8 @@ nav a.active {
 .hero {
   background: url("path/to/your/hero-image.jpg") no-repeat center center;
   background-size: cover;
+  max-width: 1200px;
+  margin-left: 7%;
 }
 
 .about,
@@ -85,6 +138,7 @@ nav a.active {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  padding-left: 120px;
 }
 
 .menu-list li {
@@ -136,6 +190,15 @@ nav a.active {
   font-size: 20px;
   cursor: pointer;
   padding: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.like-button .like-count {
+  margin-left: 5px;
+  font-size: 16px;
 }
 
 .description-popup {
@@ -158,6 +221,7 @@ nav a.active {
   padding: 20px;
   display: inline-block;
   position: relative;
+  width: 200px;
 }
 
 .description-popup p {
@@ -173,12 +237,20 @@ nav a.active {
 }
 
 footer {
-  background-color: #000;
+  background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 10px;
-  bottom: 0;
+  padding: 1rem;
   width: 100%;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 .instagram-link {
@@ -203,8 +275,8 @@ footer {
 
 .map-container {
   margin: 20px auto;
-  max-width: 600px; /* Ограничивает максимальную ширину карты */
-  height: 400px; /* Высота карты */
+  max-width: 600px;
+  height: 400px;
   position: relative;
   width: 100%;
 }
@@ -215,113 +287,56 @@ footer {
   border: 0;
 }
 
-@media (max-width: 480px) {
-  header {
-    font-size: 24px;
-  }
-
-  nav {
-    padding: 5px;
-  }
-
-  nav a {
-    margin: 0 10px;
-  }
-
-  .hero,
-  .about,
-  .history,
-  .team {
-    padding: 30px 10px;
-  }
-
-  .menu {
-    padding: 10px;
-  }
-
-  .menu-list h3 {
-    font-size: 1.1em;
-  }
-
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
-  footer {
-    font-size: 14px;
-  }
+.feedback-section {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  z-index: 1000;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
-  header {
-    font-size: 28px;
-  }
-
-  nav {
-    padding: 8px;
-  }
-
-  nav a {
-    margin: 0 12px;
-  }
-
-  .hero,
-  .about,
-  .history,
-  .team {
-    padding: 40px 15px;
-  }
-
-  .menu {
-    padding: 15px;
-  }
-
-  .menu-list h3 {
-    font-size: 1.15em;
-  }
-
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-  }
-
-  footer {
-    font-size: 16px;
-  }
+.feedback-section h2 {
+  margin-top: 0;
 }
 
-@media (min-width: 769px) {
-  header {
-    font-size: 30px;
-  }
+.form-group {
+  margin-bottom: 1rem;
+}
 
-  nav {
-    padding: 10px;
-  }
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
 
-  nav a {
-    margin: 0 15px;
-  }
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
 
-  .hero,
-  .about,
-  .history,
-  .team {
-    padding: 50px 20px;
-  }
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #333;
+  outline: none;
+}
 
-  .menu {
-    padding: 20px;
-  }
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
 
-  .menu-list h3 {
-    font-size: 1.2em;
-  }
-
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  footer {
-    font-size: 18px;
-  }
+button[type="submit"]:hover {
+  background-color: #444;
 }
