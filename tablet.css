@@ -1,31 +1,45 @@
 @media (min-width: 481px) and (max-width: 768px) {
   body {
-    background-size: 768x auto;
-    background: url("images/1613795665_33-p-fon-dlya-prezentatsii-v-ukrainskom-stile-33.png")
-      no-repeat center center fixed;
+    padding: 0;
+    margin: 0;
     background-size: 100% auto;
   }
+
   header {
+    padding: 15px;
     font-size: 28px;
   }
 
   nav {
     padding: 8px;
+    font-size: 24px;
   }
 
   nav a {
-    margin: 0 12px;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 22px;
+  }
+
+  .lang-button {
+    font-size: 18px;
+    padding: 8px 12px;
   }
 
   .hero,
   .about,
   .history,
   .team {
-    padding: 40px 15px;
+    padding: 15px 15px;
   }
 
   .menu {
     padding: 15px;
+  }
+
+  .menu-list {
+    padding-left: 60px;
+    gap: 15px;
   }
 
   .menu-list h3 {
@@ -40,28 +54,57 @@
     font-size: 16px;
   }
 
+  .footer a {
+    font-size: 16px;
+  }
+
   h1 {
     font-size: 70px;
   }
 
   h2 {
     font-size: 45px;
-    padding-left: 60px;
     width: 100%;
   }
 
   .p2 {
     font-size: 25px;
     width: 100%;
-    padding-left: 60px;
-  }
-
-  .menu-list {
-    padding-left: 60px;
-    gap: 15px;
   }
 
   .feedback-section {
     padding: 1.5rem;
   }
+
+  .team-grid {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .team-member {
+    max-width: 45%;
+  }
+
+  .team-member img.team-photo {
+    border-bottom: 4px solid #333;
+  }
+}
+
+.about-video-container {
+  margin: 30px auto;
+  padding: 0;
+  width: 80%;
+  max-width: 80%;
+}
+
+.about-video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-video-container video:hover {
+  transform: scale(1.05);
 }

@@ -1,11 +1,9 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Меню - Панська Садиба</title>
-    <!-- <link rel="stylesheet" href="mobile.css" />
-    <link rel="stylesheet" href="tablet.css" /> -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -195,8 +193,216 @@
         href="https://www.instagram.com/panska_saduba2024"
         target="_blank"
         class="instagram-link"
-        >Instagram</a
-      >
+      ></a>
+    </footer>
+
+    <div id="description-popup" class="description-popup">
+      <div class="modal-content">
+        <span id="close-popup" class="close">&times;</span>
+        <p id="description-text"></p>
+      </div>
+    </div>
+
+    <script src="/index.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Меню - Панська Садиба</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="h1">Панська Садиба</h1>
+    </header>
+
+    <nav>
+      <a href="index.html" class="nav-link" id="home-link">Головна</a>
+      <a href="menu.html" class="nav-link active" id="menu-link">Меню</a>
+      <a href="contact.html" class="nav-link" id="contact-link">Контакти</a>
+    </nav>
+    <main>
+      <section id="menu" class="menu">
+        <ul class="menu-list">
+          <li>
+            <h3>Стейк зі свинини</h3>
+            <div class="gallery-grid">
+              <div class="gallery-item" data-description="Стейк зі свинини">
+                <img
+                  src="/images/Стейк со свинины.jpeg"
+                  alt="Стейк зі свинини"
+                />
+                <button class="like-button">
+                  ❤️
+                  <span class="like-count">0</span>
+                </button>
+              </div>
+            </div>
+            <p><strong>Вага:</strong> 100/50/30 г</p>
+            <p><strong>Ціна:</strong> 130 грн</p>
+          </li>
+          <li>
+            <h3>Страва на компанію</h3>
+            <div class="gallery-grid">
+              <div
+                class="gallery-item"
+                data-description="Свинний ошийок, курячі крильця, люля кебаб, картопля з салом, чіабата, соуси, сезонні овочі."
+              >
+                <img
+                  src="/images/Страва на компанию.jpeg"
+                  alt="Страва на компанію"
+                  style="height: 200px"
+                />
+                <button class="like-button">
+                  ❤️
+                  <span class="like-count">0</span>
+                </button>
+              </div>
+            </div>
+            <p><strong>Вага:</strong> 1200/200/100 г</p>
+            <p><strong>Ціна:</strong> 700 грн</p>
+          </li>
+          <li>
+            <h3>Люля ке баб</h3>
+            <div class="gallery-grid">
+              <div
+                class="gallery-item"
+                data-description="Смачні люля-кебаби, приготовані на грилі."
+              >
+                <img
+                  src="/images/Люля ке баб.jpeg"
+                  alt="Люля ке баб"
+                  style="height: 200px"
+                />
+                <button class="like-button">
+                  ❤️
+                  <span class="like-count">0</span>
+                </button>
+              </div>
+            </div>
+            <p><strong>Вага:</strong> 100/100/50/20 г</p>
+            <p><strong>Ціна:</strong> 70 грн</p>
+          </li>
+          <li>
+            <h3>Намазка з сала</h3>
+            <div class="gallery-grid">
+              <div
+                class="gallery-item"
+                data-description="Намазка з сала з ароматними спеціями."
+              >
+                <img
+                  src="/images/Намазка з сала.jpeg"
+                  alt="Намазка з сала"
+                  style="height: 200px"
+                />
+                <button class="like-button">
+                  ❤️
+                  <span class="like-count">0</span>
+                </button>
+              </div>
+            </div>
+            <p><strong>Вага:</strong> 100/50 г</p>
+            <p><strong>Ціна:</strong> 55 грн</p>
+          </li>
+          <li>
+            <h3>Скумбрія на мангалі</h3>
+            <div class="gallery-grid">
+              <div
+                class="gallery-item"
+                data-description="Скумбрія, запечена на мангалі, з приємним димним ароматом."
+              >
+                <img
+                  src="/images/Скумбрія на мангалі.jpeg"
+                  alt="Скумбрія на мангалі"
+                  style="height: 200px"
+                />
+                <button class="like-button">
+                  ❤️
+                  <span class="like-count">0</span>
+                </button>
+              </div>
+            </div>
+            <p><strong>Вага:</strong> 100/100 г</p>
+            <p><strong>Ціна:</strong> 180 грн</p>
+          </li>
+          <li>
+            <h3>Сирники</h3>
+            <div class="gallery-grid">
+              <div
+                class="gallery-item"
+                data-description="Сирники з домашнього сиру, подані зі сметаною."
+              >
+                <img
+                  src="/images/Сирники.jpeg"
+                  alt="Сирники"
+                  style="height: 200px"
+                />
+                <button class="like-button">
+                  ❤️
+                  <span class="like-count">0</span>
+                </button>
+              </div>
+            </div>
+            <p><strong>Вага:</strong> 100/50/30 г</p>
+            <p><strong>Ціна:</strong> 100 грн</p>
+          </li>
+          <li>
+            <h3>Картопля запечена з сиром</h3>
+            <div class="gallery-grid">
+              <div
+                class="gallery-item"
+                data-description="Запечена картопля з розтопленим сиром і травами."
+              >
+                <img
+                  src="/images/Картопля запечена з сиром.jpg"
+                  alt="Картопля запечена з сиром"
+                  style="height: 200px"
+                />
+                <button class="like-button">
+                  ❤️
+                  <span class="like-count">0</span>
+                </button>
+              </div>
+            </div>
+            <p><strong>Вага:</strong> 250 г</p>
+            <p><strong>Ціна:</strong> 65 грн</p>
+          </li>
+          <li>
+            <h3>Картопля фрі</h3>
+            <div class="gallery-grid">
+              <div
+                class="gallery-item"
+                data-description="Хрустка картошка фрі, посипана сіллю."
+              >
+                <img
+                  src="/images/Картопля фрі.jpeg"
+                  alt="Картопля фрі"
+                  style="height: 200px"
+                />
+                <button class="like-button">
+                  ❤️
+                  <span class="like-count">0</span>
+                </button>
+              </div>
+            </div>
+            <p><strong>Вага:</strong> 150 г</p>
+            <p><strong>Ціна:</strong> 60 грн</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Ресторан Панська Садиба. Всі права захищені.</p>
+      <a
+        href="https://www.instagram.com/panska_saduba2024"
+        target="_blank"
+        class="instagram-link"
+      ></a>
     </footer>
 
     <div id="description-popup" class="description-popup">
