@@ -5,73 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Панська Садиба</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".lang-button").click(function () {
-          const lang = $(this).data("lang");
-          setLanguage(lang);
-        });
-
-        function setLanguage(lang) {
-          const translations = {
-            en: {
-              headerTitle: "Panska Sadyba",
-              feedbackTitle: "Leave Feedback",
-              name: "Your Name",
-              email: "Your Email",
-              message: "Your Feedback",
-              submit: "Submit",
-              success: "Thank you for your feedback!",
-              error: "There was an error. Please try again.",
-              home: "Home",
-              menu: "Menu",
-              contact: "Contact",
-              feedback: "Leave Feedback",
-              instagram: "Instagram",
-            },
-            uk: {
-              headerTitle: "Панська Садиба",
-              feedbackTitle: "Залишити відгук",
-              name: "Ваше ім'я",
-              email: "Ваша електронна пошта",
-              message: "Ваш відгук",
-              submit: "Відправити",
-              success: "Дякуємо за ваш відгук!",
-              error: "Сталася помилка. Будь ласка, спробуйте ще раз.",
-              home: "Головна",
-              menu: "Меню",
-              contact: "Контакти",
-              feedback: "Залишити відгук",
-              instagram: "Instagram",
-            },
-          };
-
-          $("[data-i18n]").each(function () {
-            const key = $(this).data("i18n");
-            $(this).text(translations[lang][key]);
-          });
-        }
-
-        $("#feedbackForm").submit(function (event) {
-          event.preventDefault();
-          alert("Thank you for your feedback!");
-          $(this).trigger("reset");
-        });
-
-        setLanguage("uk");
-      });
-    </script>
   </head>
   <body>
     <header>
-      <h1 data-i18n="headerTitle">Панська Садиба</h1>
+      <h1 data-i18n="title">Панська Садиба</h1>
     </header>
 
     <nav>
       <a href="index.html" class="nav-link" data-i18n="home">Головна</a>
       <a href="menu.html" class="nav-link" data-i18n="menu">Меню</a>
-      <a href="contact.html" class="nav-link" data-i18n="contact">Контакти</a>
       <a href="feedback.html" class="nav-link" data-i18n="feedback"
         >Залишити відгук</a
       >
@@ -101,13 +43,39 @@
     </main>
 
     <footer>
-      <p>&copy; 2024 Ресторан Панська Садиба. Всі права захищені.</p>
-      <a
-        href="https://www.instagram.com/panska_saduba2024"
-        target="_blank"
-        class="instagram-link"
-        data-i18n="instagram"
-      ></a>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 data-i18n="contacts">Контакти</h3>
+          <p data-i18n="address">
+            Адреса: ул. Весняна, 38, смт. Донець, Харківська обл, Ізьмський р-н
+          </p>
+          <p data-i18n="phone">Телефон: 0508010447, 0660829823</p>
+          <p data-i18n="email">Email: info@panskasadiba.ua</p>
+          <p data-i18n="wifi">FREE WI-FI: 12345678</p>
+        </div>
+
+        <div class="footer-section">
+          <h3 data-i18n="hours">Часи роботи</h3>
+          <p data-i18n="monday">Понеділок-Неділя: 11:00 - 22:00</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Social Media</h3>
+          <a
+            href="https://www.instagram.com/panska_saduba2024"
+            target="_blank"
+            class="instagram-link"
+            data-i18n=""
+          ></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer">
+          &copy; 2024 Ресторан Панська Садиба. Всі права захищені.
+        </p>
+      </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index-translation.js"></script>
   </body>
 </html>

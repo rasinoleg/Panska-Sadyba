@@ -7,69 +7,6 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mobile.css" />
     <link rel="stylesheet" href="tablet.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      const translations = {
-        en: {
-          title: "Panska Sadyba",
-          home: "Home",
-          menu: "Menu",
-          contact: "Contact",
-          feedback: "Leave Feedback",
-          welcome: "Welcome to the Panska Sadyba restaurant",
-          description:
-            "One of the most interesting and richest cuisines in the world is rightfully considered to be Ukrainian cuisine...",
-          about: "About Us",
-          aboutText:
-            "The Panska Sadyba restaurant is a unique place where traditions meet modernity...",
-          history: "Our History",
-          historyText:
-            "Opened in 2024, the Panska Sadyba restaurant quickly won the love of locals and visitors...",
-          team: "Our Team",
-          teamText:
-            "Our team consists of professional chefs, waiters, and administration...",
-          footer: "&copy; 2024 Panska Sadyba Restaurant. All rights reserved.",
-          instagram: "Instagram",
-        },
-        uk: {
-          title: "Панська Садиба",
-          home: "Головна",
-          menu: "Меню",
-          contact: "Контакти",
-          feedback: "Залишити відгук",
-          welcome:
-            "Ласкаво просимо в ресторан української кухні Панська Садиба",
-          description:
-            "Однією з найцікавіших та найбагатших у світі по праву вважається...",
-          about: "Про нас",
-          aboutText:
-            "Ресторан Панська Садиба — це унікальне місце, де традиції зустрічаються з сучасністю...",
-          history: "Наша історія",
-          historyText:
-            "Відкритий у 2024 році, ресторан Панська Садиба швидко завоював любов місцевих жителів...",
-          team: "Наша команда",
-          teamText:
-            "Наша команда складається з професійних кухарів, офіціантів та адміністрації...",
-          footer: "&copy; 2024 Ресторан Панська Садиба. Всі права захищені.",
-          instagram: "Instagram",
-        },
-      };
-
-      function setLanguage(lang) {
-        $("[data-i18n]").each(function () {
-          const key = $(this).data("i18n");
-          $(this).text(translations[lang][key]);
-        });
-      }
-
-      $(document).ready(function () {
-        $(".lang-button").click(function () {
-          const lang = $(this).data("lang");
-          setLanguage(lang);
-        });
-        setLanguage("uk");
-      });
-    </script>
   </head>
   <body>
     <div class="container">
@@ -80,7 +17,6 @@
       <nav>
         <a href="index.html" class="nav-link" data-i18n="home">Головна</a>
         <a href="menu.html" class="nav-link" data-i18n="menu">Меню</a>
-        <a href="contact.html" class="nav-link" data-i18n="contact">Контакти</a>
         <a href="feedback.html" class="nav-link" data-i18n="feedback"
           >Залишити відгук</a
         >
@@ -96,27 +32,7 @@
             </h2>
             <p data-i18n="description" class="p2">
               Однією з найцікавіших та найбагатших у світі по праву вважається
-              саме українська кухня. Завдяки різноманітності страв, їхнім
-              неповторним смаковим якостям українська кухня у ресторанах здобула
-              величезну любов і популярність не лише в Україні, а й далеко за її
-              межами. Всі знають про українські пампушки, гречаники, галушки. А
-              хіба є ті, хто не захоче поласувати у ресторані у Києві такими
-              традиційними стравами, як шпиговане сало, наваристий борщ або
-              вареники з різними начинками? Сформувалася українська кухня в ХІХ
-              столітті, будучи близькою до білоруської та польської. Цікаво, що
-              за часів Київської Русі слов’яни перейняли деякі страви
-              візантійської кухні – наприклад, борщ, що був національною стравою
-              Стародавнього Риму! А технологію приготування деяких страв
-              українці запозичили в угорців, татарів, турків і навіть німців,
-              трохи змінивши її. Можливо, саме тому українці давно звикли до
-              страв інших народів світу, вважаючи їх «своїми» і насолоджуючись
-              різними смаками і незвичайним поєднанням інгредієнтів. У ресторані
-              Prynada подають саме такі страви – національні, але адаптовані під
-              запити сучасного українця та ритм його життя. Тут немає певних
-              рамок і умовностей: кожен гість може дізнатися багато нового як
-              про рідну кухню, так і про кухню будь-якої іншої країни. Навіть
-              найвибагливіший гурман серед величезного розмаїття запропонованих
-              страв легко вибере ті, що викличуть у нього справжнє захоплення.
+              саме українська кухня...
             </p>
           </div>
         </section>
@@ -126,11 +42,8 @@
             <h2 data-i18n="about" class="h2">Про нас</h2>
             <p data-i18n="aboutText" class="p2">
               Ресторан Панська Садиба — це унікальне місце, де традиції
-              зустрічаються з сучасністю. Ми пропонуємо широкий вибір страв
-              української кухні, приготованих з найсвіжіших інгредієнтів. Наші
-              кухарі готують для вас з любов'ю та увагою до деталей.
+              зустрічаються з сучасністю...
             </p>
-            <!-- Видео -->
             <video class="about-video" autoplay muted loop>
               <source src="video/2024-08-19 11.46.01.mp4" type="video/mp4" />
               Ваш браузер не поддерживает видео.
@@ -143,18 +56,17 @@
             <h2 data-i18n="history" class="h2">Наша історія</h2>
             <p data-i18n="historyText" class="p2">
               Відкритий у 2024 році, ресторан Панська Садиба швидко завоював
-              любов місцевих жителів та гостей міста. Наш ресторан — це місце,
-              де можна насолодитися не тільки смачною їжею, але й теплою
-              атмосферою, яка нагадує про сімейні вечори.
+              любов місцевих жителів...
             </p>
           </div>
         </section>
+
         <section id="team" class="team">
           <div>
             <h2 data-i18n="team" class="h2">Наша команда</h2>
             <p data-i18n="teamText" class="p2">
               Наша команда складається з професійних кухарів, офіціантів та
-              адміністрації.
+              адміністрації...
             </p>
             <div class="team-grid">
               <div class="team-member">
@@ -195,12 +107,12 @@
               </div>
               <div class="team-member">
                 <img
-                  src="images/team3.jpg"
+                  src="images/team4.jpg"
                   alt="Член команди 3"
                   class="team-photo"
                 />
-                <h3>Олена</h3>
-                <p>Офіціант</p>
+                <h3>Микола</h3>
+                <p>Адміністратор</p>
               </div>
             </div>
           </div>
@@ -208,16 +120,41 @@
       </main>
 
       <footer>
-        <p data-i18n="footer">
-          &copy; 2024 Ресторан Панська Садиба. Всі права захищені.
-        </p>
-        <a
-          href="https://www.instagram.com/panska_saduba2024"
-          target="_blank"
-          class="instagram-link"
-          data-i18n=""
-        ></a>
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 data-i18n="contacts">Контакти</h3>
+            <p data-i18n="address">
+              Адреса: ул. Весняна, 38, смт. Донець, Харківська обл, Ізьмський
+              р-н
+            </p>
+            <p data-i18n="phone">Телефон: 0506529037</p>
+            <p data-i18n="email">Email: info@panskasadiba.ua</p>
+            <p data-i18n="wifi">FREE WI-FI: 12345678</p>
+          </div>
+
+          <div class="footer-section">
+            <h3 data-i18n="hours">Часи роботи</h3>
+            <p data-i18n="monday">Понеділок-Неділя: 11:00 - 22:00</p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Social Media</h3>
+            <a
+              href="https://www.instagram.com/panska_saduba2024"
+              target="_blank"
+              class="instagram-link"
+              data-i18n=""
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p data-i18n="footer">
+            &copy; 2024 Ресторан Панська Садиба. Всі права захищені.
+          </p>
+        </div>
       </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index-translation.js"></script>
   </body>
 </html>

@@ -1,252 +1,67 @@
-<!-- <!DOCTYPE html>
-<html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Меню - Панська Садиба</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1 class="h1">Панська Садиба</h1>
-    </header>
-
-    <nav>
-      <a href="index.html" class="nav-link" id="home-link">Головна</a>
-      <a href="menu.html" class="nav-link active" id="menu-link">Меню</a>
-      <a href="contact.html" class="nav-link" id="contact-link">Контакти</a>
-    </nav>
-    <main>
-      <section id="menu" class="menu">
-        <ul class="menu-list">
-          <li>
-            <h3>Стейк зі свинини</h3>
-            <div class="gallery-grid">
-              <div class="gallery-item" data-description="Стейк зі свинини">
-                <img
-                  src="/images/Стейк со свинины.jpeg"
-                  alt="Стейк зі свинини"
-                />
-                <button class="like-button">
-                  ❤️
-                  <span class="like-count">0</span>
-                </button>
-              </div>
-            </div>
-            <p><strong>Вага:</strong> 100/50/30 г</p>
-            <p><strong>Ціна:</strong> 130 грн</p>
-          </li>
-          <li>
-            <h3>Страва на компанію</h3>
-            <div class="gallery-grid">
-              <div
-                class="gallery-item"
-                data-description="Свинний ошийок, курячі крильця, люля кебаб, картопля з салом, чіабата, соуси, сезонні овочі."
-              >
-                <img
-                  src="/images/Страва на компанию.jpeg"
-                  alt="Страва на компанію"
-                  style="height: 200px"
-                />
-                <button class="like-button">
-                  ❤️
-                  <span class="like-count">0</span>
-                </button>
-              </div>
-            </div>
-            <p><strong>Вага:</strong> 1200/200/100 г</p>
-            <p><strong>Ціна:</strong> 700 грн</p>
-          </li>
-          <li>
-            <h3>Люля ке баб</h3>
-            <div class="gallery-grid">
-              <div
-                class="gallery-item"
-                data-description="Смачні люля-кебаби, приготовані на грилі."
-              >
-                <img
-                  src="/images/Люля ке баб.jpeg"
-                  alt="Люля ке баб"
-                  style="height: 200px"
-                />
-                <button class="like-button">
-                  ❤️
-                  <span class="like-count">0</span>
-                </button>
-              </div>
-            </div>
-            <p><strong>Вага:</strong> 100/100/50/20 г</p>
-            <p><strong>Ціна:</strong> 70 грн</p>
-          </li>
-          <li>
-            <h3>Намазка з сала</h3>
-            <div class="gallery-grid">
-              <div
-                class="gallery-item"
-                data-description="Намазка з сала з ароматними спеціями."
-              >
-                <img
-                  src="/images/Намазка з сала.jpeg"
-                  alt="Намазка з сала"
-                  style="height: 200px"
-                />
-                <button class="like-button">
-                  ❤️
-                  <span class="like-count">0</span>
-                </button>
-              </div>
-            </div>
-            <p><strong>Вага:</strong> 100/50 г</p>
-            <p><strong>Ціна:</strong> 55 грн</p>
-          </li>
-          <li>
-            <h3>Скумбрія на мангалі</h3>
-            <div class="gallery-grid">
-              <div
-                class="gallery-item"
-                data-description="Скумбрія, запечена на мангалі, з приємним димним ароматом."
-              >
-                <img
-                  src="/images/Скумбрія на мангалі.jpeg"
-                  alt="Скумбрія на мангалі"
-                  style="height: 200px"
-                />
-                <button class="like-button">
-                  ❤️
-                  <span class="like-count">0</span>
-                </button>
-              </div>
-            </div>
-            <p><strong>Вага:</strong> 100/100 г</p>
-            <p><strong>Ціна:</strong> 180 грн</p>
-          </li>
-          <li>
-            <h3>Сирники</h3>
-            <div class="gallery-grid">
-              <div
-                class="gallery-item"
-                data-description="Сирники з домашнього сиру, подані зі сметаною."
-              >
-                <img
-                  src="/images/Сирники.jpeg"
-                  alt="Сирники"
-                  style="height: 200px"
-                />
-                <button class="like-button">
-                  ❤️
-                  <span class="like-count">0</span>
-                </button>
-              </div>
-            </div>
-            <p><strong>Вага:</strong> 100/50/30 г</p>
-            <p><strong>Ціна:</strong> 100 грн</p>
-          </li>
-          <li>
-            <h3>Картопля запечена з сиром</h3>
-            <div class="gallery-grid">
-              <div
-                class="gallery-item"
-                data-description="Запечена картопля з розтопленим сиром і травами."
-              >
-                <img
-                  src="/images/Картопля запечена з сиром.jpg"
-                  alt="Картопля запечена з сиром"
-                  style="height: 200px"
-                />
-                <button class="like-button">
-                  ❤️
-                  <span class="like-count">0</span>
-                </button>
-              </div>
-            </div>
-            <p><strong>Вага:</strong> 250 г</p>
-            <p><strong>Ціна:</strong> 65 грн</p>
-          </li>
-          <li>
-            <h3>Картопля фрі</h3>
-            <div class="gallery-grid">
-              <div
-                class="gallery-item"
-                data-description="Хрустка картошка фрі, посипана сіллю."
-              >
-                <img
-                  src="/images/Картопля фрі.jpeg"
-                  alt="Картопля фрі"
-                  style="height: 200px"
-                />
-                <button class="like-button">
-                  ❤️
-                  <span class="like-count">0</span>
-                </button>
-              </div>
-            </div>
-            <p><strong>Вага:</strong> 150 г</p>
-            <p><strong>Ціна:</strong> 60 грн</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2024 Ресторан Панська Садиба. Всі права захищені.</p>
-      <a
-        href="https://www.instagram.com/panska_saduba2024"
-        target="_blank"
-        class="instagram-link"
-      ></a>
-    </footer>
-
-    <div id="description-popup" class="description-popup">
-      <div class="modal-content">
-        <span id="close-popup" class="close">&times;</span>
-        <p id="description-text"></p>
-      </div>
-    </div>
-
-    <script src="/index.js"></script>
-  </body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Меню - Панська Садиба</title>
+    <title data-i18n="title">Меню - Панська Садиба</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <h1 class="h1">Панська Садиба</h1>
+      <h1 data-i18n="title">Панська Садиба</h1>
     </header>
 
     <nav>
-      <a href="index.html" class="nav-link" id="home-link">Головна</a>
-      <a href="menu.html" class="nav-link active" id="menu-link">Меню</a>
-      <a href="contact.html" class="nav-link" id="contact-link">Контакти</a>
+      <a href="index.html" class="nav-link" id="home-link" data-i18n="home"
+        >Головна</a
+      >
+      <a
+        href="menu.html"
+        class="nav-link active"
+        id="menu-link"
+        data-i18n="menu"
+        >Меню</a
+      >
+      <a href="feedback.html" class="nav-link" data-i18n="feedback"
+        >Залишити відгук</a
+      >
+      <button
+        class="lang-button lang-button-EN"
+        data-lang="en"
+        data-i18n="lang-en"
+      >
+        EN
+      </button>
+      <button
+        class="lang-button lang-button-UK"
+        data-lang="uk"
+        data-i18n="lang-uk"
+      >
+        UK
+      </button>
     </nav>
     <main>
       <section id="menu" class="menu">
         <ul class="menu-list">
           <li>
-            <h3>Стейк зі свинини</h3>
+            <h3 data-i18n="pork-steak">Стейк зі свинини</h3>
             <div class="gallery-grid">
               <div class="gallery-item" data-description="Стейк зі свинини">
                 <img
                   src="/images/Стейк со свинины.jpeg"
                   alt="Стейк зі свинини"
                 />
-                <button class="like-button">
+                <button class="like-button" data-i18n="like-button">
                   ❤️
                   <span class="like-count">0</span>
                 </button>
               </div>
             </div>
-            <p><strong>Вага:</strong> 100/50/30 г</p>
-            <p><strong>Ціна:</strong> 130 грн</p>
+            <p><strong data-i18n="weight">Вага:</strong> 100/50/30 г</p>
+            <p><strong data-i18n="price">Ціна:</strong> 130 грн</p>
           </li>
           <li>
-            <h3>Страва на компанію</h3>
+            <h3 data-i18n="company-dish">Страва на компанію</h3>
             <div class="gallery-grid">
               <div
                 class="gallery-item"
@@ -257,17 +72,17 @@
                   alt="Страва на компанію"
                   style="height: 200px"
                 />
-                <button class="like-button">
+                <button class="like-button" data-i18n="like-button">
                   ❤️
                   <span class="like-count">0</span>
                 </button>
               </div>
             </div>
-            <p><strong>Вага:</strong> 1200/200/100 г</p>
-            <p><strong>Ціна:</strong> 700 грн</p>
+            <p><strong data-i18n="weight">Вага:</strong> 1200/200/100 г</p>
+            <p><strong data-i18n="price">Ціна:</strong> 700 грн</p>
           </li>
           <li>
-            <h3>Люля ке баб</h3>
+            <h3 data-i18n="kebab">Люля ке баб</h3>
             <div class="gallery-grid">
               <div
                 class="gallery-item"
@@ -278,17 +93,17 @@
                   alt="Люля ке баб"
                   style="height: 200px"
                 />
-                <button class="like-button">
+                <button class="like-button" data-i18n="like-button">
                   ❤️
                   <span class="like-count">0</span>
                 </button>
               </div>
             </div>
-            <p><strong>Вага:</strong> 100/100/50/20 г</p>
-            <p><strong>Ціна:</strong> 70 грн</p>
+            <p><strong data-i18n="weight">Вага:</strong> 100/100/50/20 г</p>
+            <p><strong data-i18n="price">Ціна:</strong> 70 грн</p>
           </li>
           <li>
-            <h3>Намазка з сала</h3>
+            <h3 data-i18n="lard-spread">Намазка з сала</h3>
             <div class="gallery-grid">
               <div
                 class="gallery-item"
@@ -299,17 +114,17 @@
                   alt="Намазка з сала"
                   style="height: 200px"
                 />
-                <button class="like-button">
+                <button class="like-button" data-i18n="like-button">
                   ❤️
                   <span class="like-count">0</span>
                 </button>
               </div>
             </div>
-            <p><strong>Вага:</strong> 100/50 г</p>
-            <p><strong>Ціна:</strong> 55 грн</p>
+            <p><strong data-i18n="weight">Вага:</strong> 100/50 г</p>
+            <p><strong data-i18n="price">Ціна:</strong> 55 грн</p>
           </li>
           <li>
-            <h3>Скумбрія на мангалі</h3>
+            <h3 data-i18n="mackerel">Скумбрія на мангалі</h3>
             <div class="gallery-grid">
               <div
                 class="gallery-item"
@@ -320,17 +135,17 @@
                   alt="Скумбрія на мангалі"
                   style="height: 200px"
                 />
-                <button class="like-button">
+                <button class="like-button" data-i18n="like-button">
                   ❤️
                   <span class="like-count">0</span>
                 </button>
               </div>
             </div>
-            <p><strong>Вага:</strong> 100/100 г</p>
-            <p><strong>Ціна:</strong> 180 грн</p>
+            <p><strong data-i18n="weight">Вага:</strong> 100/100 г</p>
+            <p><strong data-i18n="price">Ціна:</strong> 180 грн</p>
           </li>
           <li>
-            <h3>Сирники</h3>
+            <h3 data-i18n="cheese-cakes">Сирники</h3>
             <div class="gallery-grid">
               <div
                 class="gallery-item"
@@ -341,17 +156,17 @@
                   alt="Сирники"
                   style="height: 200px"
                 />
-                <button class="like-button">
+                <button class="like-button" data-i18n="like-button">
                   ❤️
                   <span class="like-count">0</span>
                 </button>
               </div>
             </div>
-            <p><strong>Вага:</strong> 100/50/30 г</p>
-            <p><strong>Ціна:</strong> 100 грн</p>
+            <p><strong data-i18n="weight">Вага:</strong> 100/50/30 г</p>
+            <p><strong data-i18n="price">Ціна:</strong> 100 грн</p>
           </li>
           <li>
-            <h3>Картопля запечена з сиром</h3>
+            <h3 data-i18n="baked-potato">Картопля запечена з сиром</h3>
             <div class="gallery-grid">
               <div
                 class="gallery-item"
@@ -362,17 +177,17 @@
                   alt="Картопля запечена з сиром"
                   style="height: 200px"
                 />
-                <button class="like-button">
+                <button class="like-button" data-i18n="like-button">
                   ❤️
                   <span class="like-count">0</span>
                 </button>
               </div>
             </div>
-            <p><strong>Вага:</strong> 250 г</p>
-            <p><strong>Ціна:</strong> 65 грн</p>
+            <p><strong data-i18n="weight">Вага:</strong> 250 г</p>
+            <p><strong data-i18n="price">Ціна:</strong> 65 грн</p>
           </li>
           <li>
-            <h3>Картопля фрі</h3>
+            <h3 data-i18n="french-fries">Картопля фрі</h3>
             <div class="gallery-grid">
               <div
                 class="gallery-item"
@@ -383,26 +198,51 @@
                   alt="Картопля фрі"
                   style="height: 200px"
                 />
-                <button class="like-button">
+                <button class="like-button" data-i18n="like-button">
                   ❤️
                   <span class="like-count">0</span>
                 </button>
               </div>
             </div>
-            <p><strong>Вага:</strong> 150 г</p>
-            <p><strong>Ціна:</strong> 60 грн</p>
+            <p><strong data-i18n="weight">Вага:</strong> 150 г</p>
+            <p><strong data-i18n="price">Ціна:</strong> 60 грн</p>
           </li>
         </ul>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2024 Ресторан Панська Садиба. Всі права захищені.</p>
-      <a
-        href="https://www.instagram.com/panska_saduba2024"
-        target="_blank"
-        class="instagram-link"
-      ></a>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 data-i18n="contacts">Контакти</h3>
+          <p data-i18n="address">
+            Адреса: ул. Весняна, 38, смт. Донець, Харківська обл, Ізьмський р-н
+          </p>
+          <p data-i18n="phone">Телефон: 0508010447, 0660829823</p>
+          <p data-i18n="email">Email: info@panskasadiba.ua</p>
+          <p data-i18n="wifi">FREE WI-FI: 12345678</p>
+        </div>
+
+        <div class="footer-section">
+          <h3 data-i18n="hours">Часи роботи</h3>
+          <p data-i18n="monday">Понеділок-Неділя: 11:00 - 22:00</p>
+        </div>
+
+        <div class="footer-section">
+          <h3 data-i18n="social-media">Social Media</h3>
+          <a
+            href="https://www.instagram.com/panska_saduba2024"
+            target="_blank"
+            class="instagram-link"
+            data-i18n="instagram-link"
+          ></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer">
+          &copy; 2024 Ресторан Панська Садиба. Всі права захищені.
+        </p>
+      </div>
     </footer>
 
     <div id="description-popup" class="description-popup">
@@ -411,7 +251,8 @@
         <p id="description-text"></p>
       </div>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index-translation.js"></script>
     <script src="/index.js"></script>
   </body>
 </html>
