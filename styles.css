@@ -241,7 +241,6 @@ footer {
 .footer-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -418,4 +417,32 @@ button[type="submit"]:hover {
 .about-video:hover {
   transform: scale(1.05);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+.parties {
+  padding: 60px 20px;
+  background-color: #f9f9f9; /* Цвет фона секции */
+  text-align: center;
+}
+
+.parties .h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333; /* Цвет заголовка */
+}
+
+.parties .p2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #000; /* Цвет текста */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parties-video {
+  width: 200px;
+  height: auto;
+  border-radius: 50px; /* Закругленные углы */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+  margin: 0 auto; /* Центрирование видео */
 }
