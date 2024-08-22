@@ -22,7 +22,7 @@ $(document).ready(function () {
       porkSteak: "Pork Steak",
       companyDish: "Company Dish",
       kebab: "Kebab",
-      lardSpread: "Lard Spread",
+      lardSpread: "Lard spread",
       mackerel: "Grilled Mackerel",
       cheeseCakes: "Cheese Cakes",
       bakedPotato: "Baked Potato with Cheese",
