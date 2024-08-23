@@ -8,13 +8,13 @@ $(document).ready(function () {
       menu: "Menu",
       welcome: "Welcome to the Panska Sadyba restaurant",
       description:
-        "One of the most interesting and richest cuisines in the world is rightfully considered to be Ukrainian cuisine...",
+        "It is rightfully considered one of the most interesting and richest in the world specifically Ukrainian cuisine. Ukrainian cuisine has been formed for many centuries. Some of her dishes have become widespread among other peoples, especially Slavic, both Eastern and Western.",
       about: "About Us",
       aboutText:
-        "The Panska Sadyba restaurant is a unique place where traditions meet modernity...",
+        "Restaurant Panska Sadyba is a unique place where tradition meets modernity. Every time we get together, we share the best and treat ourselves to the tastiest, from real natural ingredients - for the health of our friends and guests.",
       history: "Our History",
       historyText:
-        "Opened in 2024, the Panska Sadyba restaurant quickly won the love of locals and visitors...",
+        "The original interior is stylized in accordance with Ukrainian traditions, where national symbols, embroidered towels, and elements of old life prevail. Home Ukrainian cuisine is on the menu. Among the signature dishes, you can highlight borscht with donuts, dumplings with various fillings, as well as meat and fish dishes cooked on an open fire. There is live music in the evenings. We are waiting for you in our institution!",
       team: "Our Team",
       teamText:
         "Our team consists of professional chefs, waiters and administration...",
@@ -58,14 +58,16 @@ $(document).ready(function () {
       home: "Головна",
       menu: "Меню",
       welcome: "Ласкаво просимо в ресторан української кухні Панська Садиба",
-      description:
-        "Однією з найцікавіших та найбагатших у світі по праву вважається українська кухня...",
+      description: `Однією з найцікавіших та найбагатших у світі по праву вважається
+        саме українська кухня. Українська кухня складалася багато століть.
+        Деякі її страви набули широкого поширення серед інших народів,
+        особливо слов'янських, як східних, і західних.`,
       about: "Про нас",
       aboutText:
-        "Ресторан Панська Садиба — це унікальне місце, де традиції зустрічаються з сучасністю...",
+        "Ресторан Панська Садиба — це унікальне місце, де традиції зустрічаються з сучасністю. Кожного разу збираючись разом ми ділимося найкращим і пригощаємо найсмачнішим, зі справжніх приридних складових - на здоров’я друзям та гостям.",
       history: "Наша історія",
       historyText:
-        "Відкритий у 2024 році, ресторан Панська Садиба швидко завоював любов місцевих жителів...",
+        "Відкритий у 2024 році, ресторан Панська Садиба швидко завоював любов місцевих жителів. Оригінальний інтер'єр стилізований з дотриманням українських традицій, де переважає національна символіка, вишиті рушники, елементи старовинного побуту. В меню домашня українська кухня. Серед фірмових страв можна виділити борщ з пампушками, вареники з різними начинками, а також страви з м'яса та риби що приготовані на відкритому вогнi. Вечорами звучить жива музика. Чекаємо Вас в нашому закладі!",
       team: "Наша команда",
       teamText:
         "Наша команда складається з професійних кухарів, офіціантів та адміністрації...",
