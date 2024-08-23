@@ -16,6 +16,11 @@ $(document).ready(function () {
       historyText:
         "Opened in 2024, the Panska Sadyba restaurant quickly won the love of locals and visitors...",
       team: "Our Team",
+      teamText:
+        "Our team consists of professional chefs, waiters and administration...",
+      ourParties: "Our parties",
+      ourText:
+        "At the Manor House, we organize unforgettable parties with live music and delicious food.",
       feedback: "Leave Feedback",
       langEn: "EN",
       langUk: "UK",
@@ -62,6 +67,11 @@ $(document).ready(function () {
       historyText:
         "Відкритий у 2024 році, ресторан Панська Садиба швидко завоював любов місцевих жителів...",
       team: "Наша команда",
+      teamText:
+        "Наша команда складається з професійних кухарів, офіціантів та адміністрації...",
+      ourParties: "Наші вечірки",
+      ourText:
+        "У Панській Садибі ми організовуємо незабутні вечірки з живою музикою та смачною їжею.",
       feedback: "Залишити відгук",
       langEn: "EN",
       langUk: "UK",
